@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7D91922-F00F-486E-94F5-E831032F2AAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Automation_1</RootNamespace>
+    <AssemblyName>Automation%281</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.4.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Programing\C#\automation\automation_part8\EF_Dll\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>D:\Programing\C#\automation\automation_part8\EF_Dll\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianDate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\PersianDate\PersianDate.dll</HintPath>
+    </Reference>
+    <Reference Include="PopupControl, Version=1.4.0.968, Culture=neutral, PublicKeyToken=04c10344d6495b18, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\PersianDate\PopupControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.BusinessObjects">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.BusinessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Database">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Database.Wpf">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Database.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Design">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Compare">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Compare.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design.SLViewer">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Design.SLViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design.WebViewer">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Design.WebViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mobile">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.MobileDesign">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.MobileDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mvc">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.MvcMobile">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.MvcMobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebDesign">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebDesignSL">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.WebDesignSL.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebFx">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.WebFx.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebSL">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.WebSL.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.BlackTheme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.BlackTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Design">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Office2003BlueTheme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Office2003BlueTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Office2003OliveGreenTheme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Office2003OliveGreenTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Office2003SilverTheme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Office2003SilverTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Office2007BlackTheme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Office2007BlackTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Office2007BlueTheme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Office2007BlueTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Office2007SilverTheme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Office2007SilverTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Office2010BlueTheme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Office2010BlueTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf.Office2013Theme">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.Wpf.Office2013Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WpfDesign">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.WpfDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WpfDesign.Design">
+      <HintPath>D:\Programing\C#\GC#952\Session 11\Stimulsoft Reports.Ultimate 2013.2.1700 Retail\Stimulsoft.Report.WpfDesign.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_forms\Add_Remember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Add_Remember.Designer.cs">
+      <DependentUpon>Add_Remember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_AccessRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_AccessRight.Designer.cs">
+      <DependentUpon>Frm_AccessRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_AddAccessRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_AddAccessRight.Designer.cs">
+      <DependentUpon>Frm_AddAccessRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_AddrEditJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_AddrEditJobs.Designer.cs">
+      <DependentUpon>frm_AddrEditJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_AddSystemPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_AddSystemPart.Designer.cs">
+      <DependentUpon>Frm_AddSystemPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_Add_Edit_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_Add_Edit_Users.Designer.cs">
+      <DependentUpon>frm_Add_Edit_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_ChangePassword.Designer.cs">
+      <DependentUpon>Frm_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_CrateNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_CrateNews.Designer.cs">
+      <DependentUpon>Frm_CrateNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_DefineSystemCommponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_DefineSystemCommponent.Designer.cs">
+      <DependentUpon>Frm_DefineSystemCommponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_Jobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_Jobs.Designer.cs">
+      <DependentUpon>frm_Jobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_JobsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_JobsHistory.Designer.cs">
+      <DependentUpon>frm_JobsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_MainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_MainAdmin.Designer.cs">
+      <DependentUpon>frm_MainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_selectedjobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_selectedjobs.Designer.cs">
+      <DependentUpon>frm_selectedjobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_setjobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_setjobs.Designer.cs">
+      <DependentUpon>frm_setjobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_ShowNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\Frm_ShowNews.Designer.cs">
+      <DependentUpon>Frm_ShowNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_ShowUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_ShowUserInfo.Designer.cs">
+      <DependentUpon>frm_ShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_ShowUserscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_ShowUserscs.Designer.cs">
+      <DependentUpon>frm_ShowUserscs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_forms\frm_UserLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_forms\frm_UserLog.Designer.cs">
+      <DependentUpon>frm_UserLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editor\AdvancedTextEditorControl\AdvancedTextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="editor\AdvancedTextEditorControl\AdvancedTextEditor.Designer.cs">
+      <DependentUpon>AdvancedTextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editor\AdvancedTextEditorControl\FontComboBoxControl\FontComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="editor\Dialogs\dlgFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editor\Dialogs\dlgFind.Designer.cs">
+      <DependentUpon>dlgFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editor\ExtendedRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="editor\TextRulerControl\TextRuler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ForgotPassword.Designer.cs">
+      <DependentUpon>Frm_ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LogIn.Designer.cs">
+      <DependentUpon>frm_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modula\DBCommon.cs" />
+    <Compile Include="Modula\ErrorHandler.cs" />
+    <Compile Include="Modula\PublicVariebale.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_forms\Frm_AddRememeber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_AddRememeber.Designer.cs">
+      <DependentUpon>Frm_AddRememeber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ChangePassword.Designer.cs">
+      <DependentUpon>Frm_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_CrateNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_CrateNote.Designer.cs">
+      <DependentUpon>Frm_CrateNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_CreateLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_CreateLetter.Designer.cs">
+      <DependentUpon>Frm_CreateLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_LetterCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_LetterCount.Designer.cs">
+      <DependentUpon>Frm_LetterCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ReadLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ReadLetter.Designer.cs">
+      <DependentUpon>Frm_ReadLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ReciveLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ReciveLetter.Designer.cs">
+      <DependentUpon>Frm_ReciveLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ReciveNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ReciveNote.Designer.cs">
+      <DependentUpon>Frm_ReciveNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ReciveRefrenceLEtter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ReciveRefrenceLEtter.Designer.cs">
+      <DependentUpon>Frm_ReciveRefrenceLEtter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_Security2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_Security2.Designer.cs">
+      <DependentUpon>Frm_Security2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_SelectedUserForSendLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_SelectedUserForSendLetter.Designer.cs">
+      <DependentUpon>Frm_SelectedUserForSendLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_SendLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_SendLetter.Designer.cs">
+      <DependentUpon>Frm_SendLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ShowDrafts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ShowDrafts.Designer.cs">
+      <DependentUpon>Frm_ShowDrafts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ShowNewsForAllUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ShowNewsForAllUser.Designer.cs">
+      <DependentUpon>Frm_ShowNewsForAllUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ShowRememebr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ShowRememebr.Designer.cs">
+      <DependentUpon>Frm_ShowRememebr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\frm_MainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\frm_MainUser.Designer.cs">
+      <DependentUpon>frm_MainUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_ShowSendNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_ShowSendNote.Designer.cs">
+      <DependentUpon>Frm_ShowSendNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_TextNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_TextNews.Designer.cs">
+      <DependentUpon>Frm_TextNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\Frm_UnReadLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\Frm_UnReadLetter.Designer.cs">
+      <DependentUpon>Frm_UnReadLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\SendRefrenceLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\SendRefrenceLetter.Designer.cs">
+      <DependentUpon>SendRefrenceLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\ShowletterForce2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\ShowletterForce2.Designer.cs">
+      <DependentUpon>ShowletterForce2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_forms\ShowRefrenceContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_forms\ShowRefrenceContent.Designer.cs">
+      <DependentUpon>ShowRefrenceContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\smsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_forms\Add_Remember.resx">
+      <DependentUpon>Add_Remember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Frm_AccessRight.resx">
+      <DependentUpon>Frm_AccessRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Frm_AddAccessRight.resx">
+      <DependentUpon>Frm_AddAccessRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_AddrEditJobs.resx">
+      <DependentUpon>frm_AddrEditJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Frm_AddSystemPart.resx">
+      <DependentUpon>Frm_AddSystemPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_Add_Edit_Users.resx">
+      <DependentUpon>frm_Add_Edit_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Frm_ChangePassword.resx">
+      <DependentUpon>Frm_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Frm_CrateNews.resx">
+      <DependentUpon>Frm_CrateNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Frm_DefineSystemCommponent.resx">
+      <DependentUpon>Frm_DefineSystemCommponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_Jobs.resx">
+      <DependentUpon>frm_Jobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_JobsHistory.resx">
+      <DependentUpon>frm_JobsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_MainAdmin.resx">
+      <DependentUpon>frm_MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_selectedjobs.resx">
+      <DependentUpon>frm_selectedjobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_setjobs.resx">
+      <DependentUpon>frm_setjobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\Frm_ShowNews.resx">
+      <DependentUpon>Frm_ShowNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_ShowUserInfo.resx">
+      <DependentUpon>frm_ShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_ShowUserscs.resx">
+      <DependentUpon>frm_ShowUserscs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_forms\frm_UserLog.resx">
+      <DependentUpon>frm_UserLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editor\AdvancedTextEditorControl\AdvancedTextEditor.resx">
+      <DependentUpon>AdvancedTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editor\Dialogs\dlgFind.resx">
+      <DependentUpon>dlgFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ForgotPassword.resx">
+      <DependentUpon>Frm_ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LogIn.resx">
+      <DependentUpon>frm_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Automation_1.frm_LogIn.resources" />
+    <EmbeddedResource Include="obj\Debug\Automation_1.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="User_forms\Frm_AddRememeber.resx">
+      <DependentUpon>Frm_AddRememeber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ChangePassword.resx">
+      <DependentUpon>Frm_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_CrateNote.resx">
+      <DependentUpon>Frm_CrateNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_CreateLetter.resx">
+      <DependentUpon>Frm_CreateLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_LetterCount.resx">
+      <DependentUpon>Frm_LetterCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ReadLetter.resx">
+      <DependentUpon>Frm_ReadLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ReciveLetter.resx">
+      <DependentUpon>Frm_ReciveLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ReciveNote.resx">
+      <DependentUpon>Frm_ReciveNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ReciveRefrenceLEtter.resx">
+      <DependentUpon>Frm_ReciveRefrenceLEtter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_Security2.resx">
+      <DependentUpon>Frm_Security2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_SelectedUserForSendLetter.resx">
+      <DependentUpon>Frm_SelectedUserForSendLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_SendLetter.resx">
+      <DependentUpon>Frm_SendLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ShowDrafts.resx">
+      <DependentUpon>Frm_ShowDrafts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ShowNewsForAllUser.resx">
+      <DependentUpon>Frm_ShowNewsForAllUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ShowRememebr.resx">
+      <DependentUpon>Frm_ShowRememebr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\frm_MainUser.resx">
+      <DependentUpon>frm_MainUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_ShowSendNote.resx">
+      <DependentUpon>Frm_ShowSendNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_TextNews.resx">
+      <DependentUpon>Frm_TextNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\Frm_UnReadLetter.resx">
+      <DependentUpon>Frm_UnReadLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\SendRefrenceLetter.resx">
+      <DependentUpon>SendRefrenceLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\ShowletterForce2.resx">
+      <DependentUpon>ShowletterForce2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_forms\ShowRefrenceContent.resx">
+      <DependentUpon>ShowRefrenceContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="obj\Debug\Automation%281.csproj.CopyComplete" />
+    <None Include="obj\Debug\Automation%281.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Automation%281.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Automation%281.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\smsService\AllMessage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\Branch.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\ReceivedMessage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\smsService\ScheduleSend.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\SendReceive.wsdl" />
+    <None Include="Web References\smsService\SendToBranchFilterConditions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\SendToBranchSendMethod.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\SentMessage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\SentSmsDetails.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\SMSLineNumber.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\smsService\TrashedMessage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Automation%281.exe" />
+    <Content Include="bin\Debug\Automation%281.pdb" />
+    <Content Include="bin\Debug\DevComponents.DotNetBar2.dll" />
+    <Content Include="bin\Debug\DevComponents.DotNetBar2.xml" />
+    <Content Include="editor\Resources\l_indent_pos_lower.png" />
+    <Content Include="editor\Resources\l_indet_pos_upper.png" />
+    <Content Include="editor\Resources\r_indent_pos.png" />
+    <Content Include="editor\Resources\tab_pos.png" />
+    <Content Include="img\adduser.png" />
+    <Content Include="img\AdminIcon.ico" />
+    <Content Include="img\administrator.png" />
+    <Content Include="img\bayegani.png" />
+    <Content Include="img\defaultuserpic.jpg" />
+    <None Include="Resources\images %282%29.jfif" />
+    <None Include="Resources\images %281%29.jfif" />
+    <None Include="Web References\smsService\SendReceive.disco" />
+    <None Include="Resources\iconkey-300x3002.png" />
+    <None Include="Resources\iconkey-300x3001.png" />
+    <None Include="Resources\iconkey-300x300.png" />
+    <None Include="Resources\editletter.png" />
+    <None Include="Resources\defaultuserpic.jpg" />
+    <None Include="img\login.png" />
+    <None Include="img\download.png" />
+    <Content Include="img\e_mail.png" />
+    <Content Include="img\e_mail2.png" />
+    <Content Include="img\jobmanagment.png" />
+    <Content Include="img\jobs.png" />
+    <Content Include="img\mail_2.png" />
+    <Content Include="img\message.png" />
+    <Content Include="img\readletter.png" />
+    <Content Include="img\remember.png" />
+    <Content Include="img\search-icon.png" />
+    <Content Include="img\setjob.png" />
+    <None Include="img\setjobs2.png" />
+    <Content Include="img\signature.jpg" />
+    <Content Include="img\User group.ico" />
+    <Content Include="obj\Debug\Automation%281.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Automation%281.exe" />
+    <Content Include="obj\Debug\Automation%281.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataModelLayer\DataModelLayer.csproj">
+      <Project>{a7cf45a7-69cc-44ac-ad5a-c7053cf67d17}</Project>
+      <Name>DataModelLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://ip.sms.ir/ws/SendReceive.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\smsService\</RelPath>
+      <UpdateFromURL>https://ip.sms.ir/ws/SendReceive.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Automation_1_smsService_SendReceive</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Stimulsoft.Report.WebSL</name>
+    </assembly>
+    <members>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.Report">
+            <summary>
+            Gets or sets a report object which is shown in the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.PreviewDataSet">
+            <summary>
+            Internal use only.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ViewerSplashScreenSource">
+            <summary>
+            Gets or sets a path to the splash screen xap file.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ViewerSplashScreenProgressChangedMethodName">
+            <summary>
+            Gets or sets a name of the splash screen progress changed method.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ThemeName">
+            <summary>
+            Gets or sets the current visual theme which is used for drawing visual elements of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.AutoMaximize">
+            <summary>
+            Gets or sets a value which indicates that the viewer must have maximal possible size in the browser.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ViewerSource">
+            <summary>
+            Gets or sets a path to the ViewerSL.xap file.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.CacheMode">
+            <summary>
+            Gets or sets the mode of the report caching.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ServerTimeout">
+            <summary>
+            Gets or sets a value which indicates how much time do the report rendering result will be stored in the server cache.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ReportGuid">
+            <summary>
+            Internal use only.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ZoomMode">
+            <summary>
+            Gets or sets a zoom mode of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.PageLoadingMode">
+            <summary>
+            Gets or sets a mode of the page loading in the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.Zoom">
+            <summary>
+            Gets or sets the report showing zoom. The default value is 100.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowReportPrintButton">
+            <summary>
+            Gets or sets a visibility of the Print button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowReportPrintToPrinterButton">
+            <summary>
+            Gets or sets a visibility of the PrintToPrinter button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowReportPrintToPdfButton">
+            <summary>
+            Gets or sets a visibility of the PrintToPdf button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowReportPrintToXpsButton">
+            <summary>
+            Gets or sets a visibility of the PrintToXps button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowReportOpenButton">
+            <summary>
+            Gets or sets a visibility of the ReportOpen button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowReportSaveButton">
+            <summary>
+            Gets or sets a visibility of the ReportSave button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageNewButton">
+            <summary>
+            Gets or sets a visibility of the PageNew button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageDeleteButton">
+            <summary>
+            Gets or sets a visibility of the PageDelete button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageDesignButton">
+            <summary>
+            Gets or sets a visibility of the PageDesign button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageSizeButton">
+            <summary>
+            Gets or sets a visibility of the PageSize button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageFirstButton">
+            <summary>
+            Gets or sets a visibility of the PageFirst button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPagePreviousButton">
+            <summary>
+            Gets or sets a visibility of the PagePrevious button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageGoToButton">
+            <summary>
+            Gets or sets a visibility of the PageGoTo button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageNextButton">
+            <summary>
+            Gets or sets a visibility of the PageNext button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageLastButton">
+            <summary>
+            Gets or sets a visibility of the PageLast button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowBookmarksPanel">
+            <summary>
+            Gets or sets a visibility of the Bookmarks panel in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowToolFindButton">
+            <summary>
+            Gets or sets a visibility of the ToolFind button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowToolEditorButton">
+            <summary>
+            Gets or sets a visibility of the ToolEditor button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowFullScreenButton">
+            <summary>
+            Gets or sets a visibility of the FullScreen button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowZoomOnePageButton">
+            <summary>
+            Gets or sets a visibility of the ZoomOnePage button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowZoomTwoPagesButton">
+            <summary>
+            Gets or sets a visibility of the ZoomTwoPages button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowZoomPageWidthButton">
+            <summary>
+            Gets or sets a visibility of the ZoomPageWidth button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowSliderZoomControl">
+            <summary>
+            Gets or sets a visibility of the SliderZoom control in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageViewSingleModeButton">
+            <summary>
+            Gets or sets a visibility of the PageViewSingleMode button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageViewContinuousModeButton">
+            <summary>
+            Gets or sets a visibility of the PageViewContinuousMode button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPageViewMultipleModeButton">
+            <summary>
+            Gets or sets a visibility of the PageViewMultipleModeButton button in the toolbar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowMainToolBar">
+            <summary>
+            Gets or sets a visibility of the ToolBar of the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.SaveMode">
+            <summary>
+            Gets or sets a mode of saving reports from the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.Localization">
+            <summary>
+            Gets or sets a name of the location which will be used to localize the viewer.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowDocumentButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the report document file.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPdfButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the PDF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowXpsButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the XPS format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPpt2007Button">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the Power Point 2007-2010 format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowHtmlButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the HTML format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowHtml5Button">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the HTML5 format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowMhtButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the MHT (Web Archive) format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowTextButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the TEXT format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowRtfButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the RTF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowWord2007Button">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the Word 2007-2010 format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowOpenDocumentWriter">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the Open Document Text format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowExcelButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the Excel BIFF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowExcelXml">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the ExcelXML format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowExcel2007">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the Excel2007-2010 format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowOpenDocumentCalc">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the Open Document Calc format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowCsvButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the CSV format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowDbfButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the DBF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowXmlButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the XML format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowDifButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the DIF format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowSylkButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the SYLK image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowBmpButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the BMP image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowGifButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the GIF image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowJpegButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the JPEG image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPcxButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the PCX image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowPngButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the PNG image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowTiffButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the TIFF image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowMetafile">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the Metafile image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowSvgButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the SVG image format.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Report.WebSL.StiWebViewerSL.ShowSvgzButton">
+            <summary>
+            Gets or sets a value which indicates that the user can save the report from the viewer to the SVGZ image format.
+            </summary>
+        </member>
+    </members>
+</doc>

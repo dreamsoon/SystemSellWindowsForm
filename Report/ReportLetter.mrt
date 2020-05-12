@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionStringEncrypted>9BrBiU1M2XFqe5y9xACi59VY+yvvV5PN4U25vW9E60bFes8JTVVLpGxp0URhACIbxFb5C09Xe5VvSe3MYElgL9lazYw=</ConnectionStringEncrypted>
+        <Name>Connection</Name>
+      </Connection>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <VW_LetterWhitSignutre Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>VW_LetterWhitSignutre</Alias>
+        <Columns isList="true" count="31">
+          <value>ForceType,System.Int64</value>
+          <value>FullName,System.String</value>
+          <value>LetterID,System.Int64</value>
+          <value>LetterNum,System.String</value>
+          <value>LetterType,System.Int64</value>
+          <value>Maintext,System.String</value>
+          <value>PeygiriType,System.Int64</value>
+          <value>Refrence,System.String</value>
+          <value>ReplayLetterID,System.Int64</value>
+          <value>SecuretyType,System.Int64</value>
+          <value>Subject,System.String</value>
+          <value>UserFamily,System.String</value>
+          <value>UserFirstName,System.String</value>
+          <value>UserID,System.Int64</value>
+          <value>AnswerType,System.Int64</value>
+          <value>AttachmentType,System.Int64</value>
+          <value>BayganiType,System.Int64</value>
+          <value>DraftyType,System.Int64</value>
+          <value>FarsiAnswerType,System.String</value>
+          <value>FarsiAttachmentType,System.String</value>
+          <value>FarsiBayganiType,System.String</value>
+          <value>FarsiDraftyType,System.String</value>
+          <value>FarsiForceType,System.String</value>
+          <value>FarsiLetterType,System.String</value>
+          <value>FarsiPeygiriType,System.String</value>
+          <value>FarsiSecuretyType,System.String</value>
+          <value>CreateDate,System.String</value>
+          <value>Abstract,System.String</value>
+          <value>Answerdeadline,System.String</value>
+          <value>UserSignutre,System.String</value>
+          <value>SendLetterDate,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>VW_LetterWhitSignutre</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from VW_LetterWhitSignutre</SqlCommand>
+      </VW_LetterWhitSignutre>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="2">
+      <value>,ReportDate,ReportDate,System.String,,False,False</value>
+      <value>,FullNameB,Variable1,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,3.4</ClientRectangle>
+          <Components isList="true" count="9">
+            <Image1 Ref="6" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,0.4,3.8,2.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>b0ab12123e9c4b10adba338c85f783a1</Guid>
+              <Image>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</Image>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Image1>
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.6,0.8,2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,16</Font>
+              <Guid>10e8d15e60274b5583840e8564c372d0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>تاریخ گزارش
+
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text2 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,0.4,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,16</Font>
+              <Guid>c948c81ed1574e4da45d27d0f8a2ca1a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>تاریخ نامه
+
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,1.4,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,16</Font>
+              <Guid>5de71416504b4160a84fd54963239e72</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>شماره</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,2.2,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,16</Font>
+              <Guid>f23ccccdadb84b3591f88c28b79fbf8b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>پیوست</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text6 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.4,0.4,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,16</Font>
+              <Guid>e1f33b9d88034beebb989bc6247ff5e3</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{VW_LetterWhitSignutre.SendLetterDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.4,3.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,16</Font>
+              <Guid>0da291435ea14ad08b425ea182a7fe55</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{VW_LetterWhitSignutre.LetterNum}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text7>
+            <Text8 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.2,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,16</Font>
+              <Guid>aeb78397b82042e99a20121ebe1854ae</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{VW_LetterWhitSignutre.FarsiAttachmentType}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text8>
+            <Text5 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.4,0.8,4.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{ReportDate}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>6d6fec965ed24c2d9ee12a7d14fa48ff</Guid>
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="15" type="PageFooterBand" isKey="true">
+          <Border>All;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,25.3,19,2.4</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text15 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.2,0.9,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,14</Font>
+              <Guid>9ace0c58181b45569fefe977a6bf35de</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>شماره تماس های سازمان </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text15>
+            <Text16 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.2,0.9,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,14</Font>
+              <Guid>00cf576586d94030a5803c825307fb75</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>031-45247647-9</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text16>
+            <Text17 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.8,1.7,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,14</Font>
+              <Guid>82048c7d4c8e45f688e5456ea7996131</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>آدرس سازمان</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text17>
+            <Text18 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,1.7,7.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,14</Font>
+              <Guid>b07100f744da431a8fc202103e28c4d0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>خیابان فردوسی فرعی1 شرقی مجتمع فرهنگ-واحد3</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text18>
+            <Text19 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,0.3,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,14</Font>
+              <Guid>b73b46336f4c45099e4142771ff65fa8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>سازمان ایده پردازان نوین</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text19>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>2ee5dfcbe0db4107b4e8d32a4d0acb17</Guid>
+          <Name>PageFooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageFooterBand1>
+        <DataBand1 Ref="21" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4.6,19,20.2</ClientRectangle>
+          <Components isList="true" count="14">
+            <Text9 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.4,0.2,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,24</Font>
+              <Guid>bc0b2c68ac9540178ad324395929600d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>بسمه تعالی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text9>
+            <Text10 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17.2,2.4,1.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>564e79b91a654e5ea7a1cef25c2c5ee9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text> :موضوع</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text10>
+            <Text11 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17.4,3.6,1,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>bbbce474d8034e9f9dfaf8f5fc054974</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>:از</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17.4,4.8,1,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>cebcbe4d01b44b27ab5e96291ca3812d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>:به</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text12>
+            <Text13 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.2,2.6,1.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>b6bd840d454a402fbb300a44979b95a6</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>:فوریت</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text13>
+            <Text14 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.2,3.8,2.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>98de17877d5e4d0f9b769f8a39ea6ed2</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>:طبقه بندی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text14>
+            <Text20 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,2.4,10.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>1fdbc26cd5334110aa48923519420e60</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>{VW_LetterWhitSignutre.Subject}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text20>
+            <Text21 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,3.6,10.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>71ac339f69634e19a2021023823e2047</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>{VW_LetterWhitSignutre.FullName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text21>
+            <Text22 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.8,4.8,8.8,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>{FullNameB}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text22>
+            <Text23 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.6,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>295f01188e1847509f0451dfbd7dd0a7</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>{VW_LetterWhitSignutre.FarsiForceType}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text23>
+            <Text24 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,3.8,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>5c4bc5cd4c444b12a85e24b851446d6d</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>{VW_LetterWhitSignutre.FarsiSecuretyType}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text24>
+            <Text25 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.6,6.8,3.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,26</Font>
+              <Guid>d617785477c346808059b15d85c4d0cd</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>سلام علیکم</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text25>
+            <Text26 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,8.2,18.8,8.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,20</Font>
+              <Guid>bca407c722be46328f70ffb146cdaec2</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Text>{VW_LetterWhitSignutre.Maintext}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text26>
+            <Image2 Ref="35" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,17.2,3.6,2.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DataColumn>VW_LetterWhitSignutre.UserSignutre</DataColumn>
+              <Name>Image2</Name>
+              <Page isRef="4" />
+              <Parent isRef="21" />
+              <Stretch>True</Stretch>
+            </Image2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>VW_LetterWhitSignutre</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Guid>e09f03b833cd4f8086d1665bde54df5f</Guid>
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>44070fadb6fa4352afb1a65a7f3d782d</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="36" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="37" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>8/18/2019 1:08:16 AM</ReportChanged>
+  <ReportCreated>8/18/2019 12:59:51 AM</ReportCreated>
+  <ReportFile />
+  <ReportGuid>a873e94d28fa4629b5e4896670e1d2a0</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2013.2.1612</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

@@ -1,0 +1,12 @@
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\bin\Debug\DataModelLayer.dll.config
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\bin\Debug\DataModelLayer.dll
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\bin\Debug\DataModelLayer.pdb
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\bin\Debug\EntityFramework.dll
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\bin\Debug\EntityFramework.xml
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\obj\Debug\DataModelLayer.csprojAssemblyReference.cache
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\obj\Debug\DataModelLayer.csproj.CoreCompileInputs.cache
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\obj\Debug\DataModelLayer.csproj.CopyComplete
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\obj\Debug\DataModelLayer.dll
+F:\My Appliction\WindowsApp\Automation(New)\Automation(1\DataModelLayer\obj\Debug\DataModelLayer.pdb

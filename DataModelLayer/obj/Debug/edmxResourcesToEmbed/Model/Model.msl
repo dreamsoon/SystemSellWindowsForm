@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AutomationNewModelStoreContainer" CdmEntityContainer="AutomationNewEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="AutomationNewModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="UserUserName" ColumnName="UserUserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserPersonalCode" ColumnName="UserPersonalCode" />
+          <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserActivity" ColumnName="UserActivity" />
+          <ScalarProperty Name="UserTell" ColumnName="UserTell" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserCreateDate" ColumnName="UserCreateDate" />
+          <ScalarProperty Name="UserSignutre" ColumnName="UserSignutre" />
+          <ScalarProperty Name="UserBrithDay" ColumnName="UserBrithDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Users">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_Users">
+        <MappingFragment StoreEntitySet="VW_Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="UserUserName" ColumnName="UserUserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserPersonalCode" ColumnName="UserPersonalCode" />
+          <ScalarProperty Name="FarsiGender" ColumnName="FarsiGender" />
+          <ScalarProperty Name="FarsiUserActivity" ColumnName="FarsiUserActivity" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserTell" ColumnName="UserTell" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserCreateDate" ColumnName="UserCreateDate" />
+          <ScalarProperty Name="UserSignutre" ColumnName="UserSignutre" />
+          <ScalarProperty Name="UserBrithDay" ColumnName="UserBrithDay" />
+          <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+          <ScalarProperty Name="UserActivity" ColumnName="UserActivity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Insert_Users" FunctionName="AutomationNewModel.Store.sp_Insert_Users" />
+    <EntitySetMapping Name="Remembers">
+      <EntityTypeMapping TypeName="AutomationNewModel.Remembers">
+        <MappingFragment StoreEntitySet="Remembers">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="RememberDate" ColumnName="RememberDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="RememberID" ColumnName="RememberID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Remembers">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_Remembers">
+        <MappingFragment StoreEntitySet="VW_Remembers">
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FarsiIsRead" ColumnName="FarsiIsRead" />
+          <ScalarProperty Name="RememberDate" ColumnName="RememberDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="RememberID" ColumnName="RememberID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Update_Users" FunctionName="AutomationNewModel.Store.sp_Update_Users" />
+    <FunctionImportMapping FunctionImportName="sp_Update_Users_NoImage" FunctionName="AutomationNewModel.Store.sp_Update_Users_NoImage" />
+    <EntitySetMapping Name="UserLog">
+      <EntityTypeMapping TypeName="AutomationNewModel.UserLog">
+        <MappingFragment StoreEntitySet="UserLog">
+          <ScalarProperty Name="IPAddres" ColumnName="IPAddres" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ExitDateTime" ColumnName="ExitDateTime" />
+          <ScalarProperty Name="EnterDateTime" ColumnName="EnterDateTime" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="UserLogID" ColumnName="UserLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_Update_ExitDateTime" FunctionName="AutomationNewModel.Store.SP_Update_ExitDateTime" />
+    <EntitySetMapping Name="VW_UserLog">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_UserLog">
+        <MappingFragment StoreEntitySet="VW_UserLog">
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="IPAddres" ColumnName="IPAddres" />
+          <ScalarProperty Name="UserLogID" ColumnName="UserLogID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ExitDateTime" ColumnName="ExitDateTime" />
+          <ScalarProperty Name="EnterDateTime" ColumnName="EnterDateTime" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="UserFullName" ColumnName="UserFullName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="AutomationNewModel.Jobs">
+        <MappingFragment StoreEntitySet="Jobs">
+          <ScalarProperty Name="JobsDetermineLevel" ColumnName="JobsDetermineLevel" />
+          <ScalarProperty Name="JobsLevel" ColumnName="JobsLevel" />
+          <ScalarProperty Name="JobsDeatiles" ColumnName="JobsDeatiles" />
+          <ScalarProperty Name="JobsName" ColumnName="JobsName" />
+          <ScalarProperty Name="JobsID" ColumnName="JobsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Jobs">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_Jobs">
+        <MappingFragment StoreEntitySet="VW_Jobs">
+          <ScalarProperty Name="ChildeCount" ColumnName="ChildeCount" />
+          <ScalarProperty Name="JobsDetermineLevel" ColumnName="JobsDetermineLevel" />
+          <ScalarProperty Name="JobsLevel" ColumnName="JobsLevel" />
+          <ScalarProperty Name="JobsDeatiles" ColumnName="JobsDeatiles" />
+          <ScalarProperty Name="JobsName" ColumnName="JobsName" />
+          <ScalarProperty Name="JobsID" ColumnName="JobsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AutomationNewModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersJobs">
+      <EntityTypeMapping TypeName="AutomationNewModel.UsersJobs">
+        <MappingFragment StoreEntitySet="UsersJobs">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="JobsID" ColumnName="JobsID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UsersJobsID" ColumnName="UsersJobsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_UserJobs">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_UserJobs">
+        <MappingFragment StoreEntitySet="VW_UserJobs">
+          <ScalarProperty Name="FarsiStatus" ColumnName="FarsiStatus" />
+          <ScalarProperty Name="UserFullName" ColumnName="UserFullName" />
+          <ScalarProperty Name="JobsDetermineLevel" ColumnName="JobsDetermineLevel" />
+          <ScalarProperty Name="JobsName" ColumnName="JobsName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="JobsID" ColumnName="JobsID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UsersJobsID" ColumnName="UsersJobsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="AutomationNewModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="AutomationNewModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="AutomationNewModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="AutomationNewModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AutomationNewModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="AutomationNewModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AutomationNewModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="AutomationNewModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="SP_ShowUserAllInfo" FunctionName="AutomationNewModel.Store.SP_ShowUserAllInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AutomationNewModel.SP_ShowUserAllInfo_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="UserUserName" ColumnName="UserUserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserPersonalCode" ColumnName="UserPersonalCode" />
+          <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserActivity" ColumnName="UserActivity" />
+          <ScalarProperty Name="UserTell" ColumnName="UserTell" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserCreateDate" ColumnName="UserCreateDate" />
+          <ScalarProperty Name="UserSignutre" ColumnName="UserSignutre" />
+          <ScalarProperty Name="UserBrithDay" ColumnName="UserBrithDay" />
+          <ScalarProperty Name="JobsName" ColumnName="JobsName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="AutomationNewModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="AtachFile">
+      <EntityTypeMapping TypeName="AutomationNewModel.AtachFile">
+        <MappingFragment StoreEntitySet="AtachFile">
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileData" ColumnName="FileData" />
+          <ScalarProperty Name="AtachFileID" ColumnName="AtachFileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_ShowUserAllInfo1" FunctionName="AutomationNewModel.Store.SP_ShowUserAllInfo1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AutomationNewModel.SP_ShowUserAllInfo1_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="UserUserName" ColumnName="UserUserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserPersonalCode" ColumnName="UserPersonalCode" />
+          <ScalarProperty Name="UserGender" ColumnName="UserGender" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserActivity" ColumnName="UserActivity" />
+          <ScalarProperty Name="UserTell" ColumnName="UserTell" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserCreateDate" ColumnName="UserCreateDate" />
+          <ScalarProperty Name="UserSignutre" ColumnName="UserSignutre" />
+          <ScalarProperty Name="UserBrithDay" ColumnName="UserBrithDay" />
+          <ScalarProperty Name="JobsName" ColumnName="JobsName" />
+          <ScalarProperty Name="JobsDetermineLevel" ColumnName="JobsDetermineLevel" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Letters">
+      <EntityTypeMapping TypeName="AutomationNewModel.Letters">
+        <MappingFragment StoreEntitySet="Letters">
+          <ScalarProperty Name="SendLetterDate" ColumnName="SendLetterDate" />
+          <ScalarProperty Name="ReplayLetterID" ColumnName="ReplayLetterID" />
+          <ScalarProperty Name="Refrence" ColumnName="Refrence" />
+          <ScalarProperty Name="Answerdeadline" ColumnName="Answerdeadline" />
+          <ScalarProperty Name="AnswerType" ColumnName="AnswerType" />
+          <ScalarProperty Name="DraftyType" ColumnName="DraftyType" />
+          <ScalarProperty Name="LetterType" ColumnName="LetterType" />
+          <ScalarProperty Name="AttachmentType" ColumnName="AttachmentType" />
+          <ScalarProperty Name="PeygiriType" ColumnName="PeygiriType" />
+          <ScalarProperty Name="BayganiType" ColumnName="BayganiType" />
+          <ScalarProperty Name="ForceType" ColumnName="ForceType" />
+          <ScalarProperty Name="SecuretyType" ColumnName="SecuretyType" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LetterNum" ColumnName="LetterNum" />
+          <ScalarProperty Name="Maintext" ColumnName="Maintext" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Letters">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_Letters">
+        <MappingFragment StoreEntitySet="VW_Letters">
+          <ScalarProperty Name="SendLetterDate" ColumnName="SendLetterDate" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="FarsiAnswerType" ColumnName="FarsiAnswerType" />
+          <ScalarProperty Name="FarsiDraftyType" ColumnName="FarsiDraftyType" />
+          <ScalarProperty Name="FarsiLetterType" ColumnName="FarsiLetterType" />
+          <ScalarProperty Name="FarsiAttachmentType" ColumnName="FarsiAttachmentType" />
+          <ScalarProperty Name="FarsiPeygiriType" ColumnName="FarsiPeygiriType" />
+          <ScalarProperty Name="FarsiBayganiType" ColumnName="FarsiBayganiType" />
+          <ScalarProperty Name="FarsiForceType" ColumnName="FarsiForceType" />
+          <ScalarProperty Name="FarsiSecuretyType" ColumnName="FarsiSecuretyType" />
+          <ScalarProperty Name="ReplayLetterID" ColumnName="ReplayLetterID" />
+          <ScalarProperty Name="Refrence" ColumnName="Refrence" />
+          <ScalarProperty Name="Answerdeadline" ColumnName="Answerdeadline" />
+          <ScalarProperty Name="AnswerType" ColumnName="AnswerType" />
+          <ScalarProperty Name="DraftyType" ColumnName="DraftyType" />
+          <ScalarProperty Name="LetterType" ColumnName="LetterType" />
+          <ScalarProperty Name="AttachmentType" ColumnName="AttachmentType" />
+          <ScalarProperty Name="PeygiriType" ColumnName="PeygiriType" />
+          <ScalarProperty Name="BayganiType" ColumnName="BayganiType" />
+          <ScalarProperty Name="ForceType" ColumnName="ForceType" />
+          <ScalarProperty Name="SecuretyType" ColumnName="SecuretyType" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LetterNum" ColumnName="LetterNum" />
+          <ScalarProperty Name="Maintext" ColumnName="Maintext" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_ReciveLetter">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_ReciveLetter">
+        <MappingFragment StoreEntitySet="VW_ReciveLetter">
+          <ScalarProperty Name="User_Girande" ColumnName="User_Girande" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="GirandeName" ColumnName="GirandeName" />
+          <ScalarProperty Name="persianreadtype" ColumnName="persianreadtype" />
+          <ScalarProperty Name="SendLetterDate" ColumnName="SendLetterDate" />
+          <ScalarProperty Name="ReadType" ColumnName="ReadType" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+          <ScalarProperty Name="FarsiAnswerType" ColumnName="FarsiAnswerType" />
+          <ScalarProperty Name="FarsiDraftyType" ColumnName="FarsiDraftyType" />
+          <ScalarProperty Name="FarsiLetterType" ColumnName="FarsiLetterType" />
+          <ScalarProperty Name="FarsiAttachmentType" ColumnName="FarsiAttachmentType" />
+          <ScalarProperty Name="FarsiPeygiriType" ColumnName="FarsiPeygiriType" />
+          <ScalarProperty Name="FarsiBayganiType" ColumnName="FarsiBayganiType" />
+          <ScalarProperty Name="FarsiForceType" ColumnName="FarsiForceType" />
+          <ScalarProperty Name="FarsiSecuretyType" ColumnName="FarsiSecuretyType" />
+          <ScalarProperty Name="FileData" ColumnName="FileData" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="Answerdeadline" ColumnName="Answerdeadline" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="ReplayLetterID" ColumnName="ReplayLetterID" />
+          <ScalarProperty Name="Refrence" ColumnName="Refrence" />
+          <ScalarProperty Name="AnswerType" ColumnName="AnswerType" />
+          <ScalarProperty Name="DraftyType" ColumnName="DraftyType" />
+          <ScalarProperty Name="LetterType" ColumnName="LetterType" />
+          <ScalarProperty Name="AttachmentType" ColumnName="AttachmentType" />
+          <ScalarProperty Name="PeygiriType" ColumnName="PeygiriType" />
+          <ScalarProperty Name="BayganiType" ColumnName="BayganiType" />
+          <ScalarProperty Name="ForceType" ColumnName="ForceType" />
+          <ScalarProperty Name="SecuretyType" ColumnName="SecuretyType" />
+          <ScalarProperty Name="LetterNum" ColumnName="LetterNum" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="SendLetterID" ColumnName="SendLetterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Note">
+      <EntityTypeMapping TypeName="AutomationNewModel.Note">
+        <MappingFragment StoreEntitySet="Note">
+          <ScalarProperty Name="CrateDate" ColumnName="CrateDate" />
+          <ScalarProperty Name="UseriID" ColumnName="UseriID" />
+          <ScalarProperty Name="MainText" ColumnName="MainText" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SenNote">
+      <EntityTypeMapping TypeName="AutomationNewModel.SenNote">
+        <MappingFragment StoreEntitySet="SenNote">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="SendNoteID" ColumnName="SendNoteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Note">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_Note">
+        <MappingFragment StoreEntitySet="VW_Note">
+          <ScalarProperty Name="CrateDate" ColumnName="CrateDate" />
+          <ScalarProperty Name="User_Sender" ColumnName="User_Sender" />
+          <ScalarProperty Name="UseriID" ColumnName="UseriID" />
+          <ScalarProperty Name="MainText" ColumnName="MainText" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_ReciveNote">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_ReciveNote">
+        <MappingFragment StoreEntitySet="VW_ReciveNote">
+          <ScalarProperty Name="CrateDate" ColumnName="CrateDate" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="User_Sender" ColumnName="User_Sender" />
+          <ScalarProperty Name="User_Reciver" ColumnName="User_Reciver" />
+          <ScalarProperty Name="UserID_reciver" ColumnName="UserID_reciver" />
+          <ScalarProperty Name="SendNoteID" ColumnName="SendNoteID" />
+          <ScalarProperty Name="UserID_Sender" ColumnName="UserID_Sender" />
+          <ScalarProperty Name="MainText" ColumnName="MainText" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_SendNote">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_SendNote">
+        <MappingFragment StoreEntitySet="VW_SendNote">
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="User_Reciver" ColumnName="User_Reciver" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SendNoteID" ColumnName="SendNoteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="AutomationNewModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Atachment" ColumnName="Atachment" />
+          <ScalarProperty Name="MainText" ColumnName="MainText" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_News">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_News">
+        <MappingFragment StoreEntitySet="VW_News">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Atachment" ColumnName="Atachment" />
+          <ScalarProperty Name="MainText" ColumnName="MainText" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_RefUser">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_RefUser">
+        <MappingFragment StoreEntitySet="VW_RefUser">
+          <ScalarProperty Name="Expr13" ColumnName="Expr13" />
+          <ScalarProperty Name="Expr7" ColumnName="Expr7" />
+          <ScalarProperty Name="Expr12" ColumnName="Expr12" />
+          <ScalarProperty Name="Expr11" ColumnName="Expr11" />
+          <ScalarProperty Name="Expr8" ColumnName="Expr8" />
+          <ScalarProperty Name="Expr10" ColumnName="Expr10" />
+          <ScalarProperty Name="Expr9" ColumnName="Expr9" />
+          <ScalarProperty Name="Expr6" ColumnName="Expr6" />
+          <ScalarProperty Name="Expr5" ColumnName="Expr5" />
+          <ScalarProperty Name="Expr3" ColumnName="Expr3" />
+          <ScalarProperty Name="UserRefrenceshode" ColumnName="UserRefrenceshode" />
+          <ScalarProperty Name="ReciveRefrenceUserID" ColumnName="ReciveRefrenceUserID" />
+          <ScalarProperty Name="Maintext" ColumnName="Maintext" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+          <ScalarProperty Name="RefrenceUserID" ColumnName="RefrenceUserID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RefrenceID" ColumnName="RefrenceID" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Refrences">
+      <EntityTypeMapping TypeName="AutomationNewModel.Refrences">
+        <MappingFragment StoreEntitySet="Refrences">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ReciveRefrenceUserID" ColumnName="ReciveRefrenceUserID" />
+          <ScalarProperty Name="RefrenceUserID" ColumnName="RefrenceUserID" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RefrenceID" ColumnName="RefrenceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_Refrence">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_Refrence">
+        <MappingFragment StoreEntitySet="VW_Refrence">
+          <ScalarProperty Name="ReciveRefrenceUserID" ColumnName="ReciveRefrenceUserID" />
+          <ScalarProperty Name="Maintext" ColumnName="Maintext" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+          <ScalarProperty Name="RefrenceUserID" ColumnName="RefrenceUserID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RefrenceID" ColumnName="RefrenceID" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_RerfrenceF">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_RerfrenceF">
+        <MappingFragment StoreEntitySet="VW_RerfrenceF">
+          <ScalarProperty Name="erjashodename" ColumnName="erjashodename" />
+          <ScalarProperty Name="Maintext" ColumnName="Maintext" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+          <ScalarProperty Name="erjashodeid" ColumnName="erjashodeid" />
+          <ScalarProperty Name="erjadahandeid" ColumnName="erjadahandeid" />
+          <ScalarProperty Name="RefrenceID" ColumnName="RefrenceID" />
+          <ScalarProperty Name="erjakonandeName" ColumnName="erjakonandeName" />
+          <ScalarProperty Name="rojoshodeName" ColumnName="rojoshodeName" />
+          <ScalarProperty Name="rojoshodeid" ColumnName="rojoshodeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_RefrenceT">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_RefrenceT">
+        <MappingFragment StoreEntitySet="VW_RefrenceT">
+          <ScalarProperty Name="ReciveRefrenceUserID" ColumnName="ReciveRefrenceUserID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="FarsiLetterType" ColumnName="FarsiLetterType" />
+          <ScalarProperty Name="FarsiPeygiriType" ColumnName="FarsiPeygiriType" />
+          <ScalarProperty Name="FarsiBayganiType" ColumnName="FarsiBayganiType" />
+          <ScalarProperty Name="FarsiForceType" ColumnName="FarsiForceType" />
+          <ScalarProperty Name="FarsiSecuretyType" ColumnName="FarsiSecuretyType" />
+          <ScalarProperty Name="LetterNum" ColumnName="LetterNum" />
+          <ScalarProperty Name="erjashodename" ColumnName="erjashodename" />
+          <ScalarProperty Name="Maintext" ColumnName="Maintext" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+          <ScalarProperty Name="erjashodeid" ColumnName="erjashodeid" />
+          <ScalarProperty Name="erjadahandeid" ColumnName="erjadahandeid" />
+          <ScalarProperty Name="RefrenceID" ColumnName="RefrenceID" />
+          <ScalarProperty Name="erjakonandeName" ColumnName="erjakonandeName" />
+          <ScalarProperty Name="rojoshodeName" ColumnName="rojoshodeName" />
+          <ScalarProperty Name="rojoshodeid" ColumnName="rojoshodeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemPart">
+      <EntityTypeMapping TypeName="AutomationNewModel.SystemPart">
+        <MappingFragment StoreEntitySet="SystemPart">
+          <ScalarProperty Name="SystemPartLevel" ColumnName="SystemPartLevel" />
+          <ScalarProperty Name="SystemPartDeatiles" ColumnName="SystemPartDeatiles" />
+          <ScalarProperty Name="SystemPartName" ColumnName="SystemPartName" />
+          <ScalarProperty Name="SystemPartID" ColumnName="SystemPartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VW_SystemPart">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_SystemPart">
+        <MappingFragment StoreEntitySet="VW_SystemPart">
+          <ScalarProperty Name="childecount" ColumnName="childecount" />
+          <ScalarProperty Name="SystemPartLevel" ColumnName="SystemPartLevel" />
+          <ScalarProperty Name="SystemPartDeatiles" ColumnName="SystemPartDeatiles" />
+          <ScalarProperty Name="SystemPartName" ColumnName="SystemPartName" />
+          <ScalarProperty Name="SystemPartID" ColumnName="SystemPartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAccess">
+      <EntityTypeMapping TypeName="AutomationNewModel.UserAccess">
+        <MappingFragment StoreEntitySet="UserAccess">
+          <ScalarProperty Name="SystemPartID" ColumnName="SystemPartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserAccessID" ColumnName="UserAccessID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Del_UserAccess" FunctionName="AutomationNewModel.Store.sp_Del_UserAccess" />
+    <EntitySetMapping Name="VW_LetterWhitSignutre">
+      <EntityTypeMapping TypeName="AutomationNewModel.VW_LetterWhitSignutre">
+        <MappingFragment StoreEntitySet="VW_LetterWhitSignutre">
+          <ScalarProperty Name="UserSignutre" ColumnName="UserSignutre" />
+          <ScalarProperty Name="SendLetterDate" ColumnName="SendLetterDate" />
+          <ScalarProperty Name="UserFamily" ColumnName="UserFamily" />
+          <ScalarProperty Name="UserFirstName" ColumnName="UserFirstName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="FarsiAnswerType" ColumnName="FarsiAnswerType" />
+          <ScalarProperty Name="FarsiDraftyType" ColumnName="FarsiDraftyType" />
+          <ScalarProperty Name="FarsiLetterType" ColumnName="FarsiLetterType" />
+          <ScalarProperty Name="FarsiAttachmentType" ColumnName="FarsiAttachmentType" />
+          <ScalarProperty Name="FarsiPeygiriType" ColumnName="FarsiPeygiriType" />
+          <ScalarProperty Name="FarsiBayganiType" ColumnName="FarsiBayganiType" />
+          <ScalarProperty Name="FarsiForceType" ColumnName="FarsiForceType" />
+          <ScalarProperty Name="FarsiSecuretyType" ColumnName="FarsiSecuretyType" />
+          <ScalarProperty Name="ReplayLetterID" ColumnName="ReplayLetterID" />
+          <ScalarProperty Name="Refrence" ColumnName="Refrence" />
+          <ScalarProperty Name="Answerdeadline" ColumnName="Answerdeadline" />
+          <ScalarProperty Name="AnswerType" ColumnName="AnswerType" />
+          <ScalarProperty Name="DraftyType" ColumnName="DraftyType" />
+          <ScalarProperty Name="LetterType" ColumnName="LetterType" />
+          <ScalarProperty Name="AttachmentType" ColumnName="AttachmentType" />
+          <ScalarProperty Name="PeygiriType" ColumnName="PeygiriType" />
+          <ScalarProperty Name="BayganiType" ColumnName="BayganiType" />
+          <ScalarProperty Name="ForceType" ColumnName="ForceType" />
+          <ScalarProperty Name="SecuretyType" ColumnName="SecuretyType" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LetterNum" ColumnName="LetterNum" />
+          <ScalarProperty Name="Maintext" ColumnName="Maintext" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="LetterCount" FunctionName="AutomationNewModel.Store.LetterCount" />
+    <FunctionImportMapping FunctionImportName="letterCountt" FunctionName="AutomationNewModel.Store.letterCountt" />
+    <EntitySetMapping Name="SendLetter">
+      <EntityTypeMapping TypeName="AutomationNewModel.SendLetter">
+        <MappingFragment StoreEntitySet="SendLetter">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ReadType" ColumnName="ReadType" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+          <ScalarProperty Name="SendLetterID" ColumnName="SendLetterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="setstatus" FunctionName="AutomationNewModel.Store.setstatus" />
+  </EntityContainerMapping>
+</Mapping>
